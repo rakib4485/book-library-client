@@ -8,7 +8,7 @@ const TimeCounter = ({ offerEndTime }) => {
       setTimeLeft(getTimeLeft());
     }, 1000);
     return () => clearInterval(intervalId);
-  }, []);
+  }, );
 
   function getTimeLeft() {
     const totalSeconds = Math.floor((new Date(offerEndTime) - new Date()) / 1000);

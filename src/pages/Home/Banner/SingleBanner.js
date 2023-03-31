@@ -9,7 +9,7 @@ const SingleBanner = ({banner}) => {
         style={{ fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif' }}
       >
         <img src={img} className="w-full" alt="" />
-        <div className="absolute text-center transform -translate-y-1/2 left-5 md:left-28 top-2/4">
+        <div className="absolute text-center transform -translate-y-1/2 left-5 md:left-28 top-2/4 hidden md:block">
           <h1 className="text-white text-2xl md:text-4xl font-bold">
             {title}
           </h1>

@@ -47,7 +47,7 @@ const Banner = () => {
         ></SingleBanner>)
       }
     </div>
-    <div className="w-[80%] mx-auto grid grid-cols-2 gap-6 mt-20">
+    <div className="md:w-[80%] w-[90%] mx-auto grid grid-cols-2 gap-6 mt-10 md:mt-20">
       <div className="">
         <img src={booksbg1} alt="" />
       </div>

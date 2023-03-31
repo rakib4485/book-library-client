@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import loginBg from "../../assets/images/login/login-bg.gif";
+import loginBg from "../../assets/images/login/bh02.jpg";
 import { Link, useNavigate } from "react-router-dom";
 import { FaGoogle } from "react-icons/fa";
 import { AuthContext } from "../../contexts/AuthProvider";
@@ -53,16 +53,15 @@ const Login = () => {
   return (
     <div className="">
       <div
-        className="relative"
+        className=""
         style={{
           background: `url(${loginBg})`,
-          height: "120vh",
           backgroundSize: "cover",
-          backgroundPosition: "absolute",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat"
         }}
-      ></div>
-
-      <div className="absolute transform -translate-y-1/2 left-5 right-5 top-[60%] md:top-[70%] ">
+      >
+        <div className="py-20">
         <form onSubmit={handleLogin} className="card-body bg-white md:w-[70%] lg:w-[40%] mx-auto rounded-md">
           <div className="flex justify-between items-center">
             <div className="text-center md:w-1/2">
@@ -120,6 +119,9 @@ const Login = () => {
           </div>
         </form>
       </div>
+      </div>
+
+      
     </div>
   );
 };
