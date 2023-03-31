@@ -20,7 +20,7 @@ const SingleBanner = ({banner}) => {
             {subtitle2}
           </h1>
         </div>
-        <div className="absolute flex  transform -translate-y-1/2 left-3/4 md:left-1/3 md:right-5 top-[80%]">
+        <div className="absolute flex  transform -translate-y-1/2 right-5 top-[80%]">
           <a href={`#slide${prev}`} className="btn btn-circle mr-2 md:mr-6">
             ❮
           </a>

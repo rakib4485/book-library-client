@@ -53,7 +53,7 @@ const MyDashboard = () => {
                 <td>{booking?.quantities}</td>
                 <td>
                   {booking.price && !booking.paid && (
-                    <Link to={`/dashboard/payment/${booking._id}`}>
+                    <Link>
                       <button className="btn btn-primary btn-sm">Pay</button>
                     </Link>
                   )}
@@ -63,7 +63,7 @@ const MyDashboard = () => {
                 </td>
                 <td>
                   {booking.price && !booking.paid && (
-                    <Link to={`/dashboard/payment/${booking._id}`}>
+                    <Link>
                       <span className='text-primary font-semibold'>Unpaid</span>
                     </Link>
                   )}

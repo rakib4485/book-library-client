@@ -6,7 +6,7 @@ const SingleBook = ({ product, setBookName }) => {
   const { _id,img, title, sellerName, location, resaleP, orginialP, used, posted } = product;
 
   return (
-    <div className="card shadow-xl">
+    <div className="card shadow-xl bg-white">
       <figure className="h-[400px]">
         <img src={img} alt={title} />
       </figure>

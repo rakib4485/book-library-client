@@ -2,6 +2,8 @@ import React from "react";
 import banner1 from "../../../assets/images/banner/1.webp";
 import banner2 from "../../../assets/images/banner/2.webp";
 import banner3 from "../../../assets/images/banner/home-3-slider-2.webp";
+import booksbg1 from '../../../assets/images/banner/bn21.jpg'
+import booksbg2 from '../../../assets/images/banner/bn22.jpg'
 import SingleBanner from "./SingleBanner";
 
 const Banner = () => {
@@ -36,13 +38,23 @@ const Banner = () => {
   ];
 
   return (
-    <div className="carousel w-full">
+    <div>
+      <div className="carousel w-full">
       {
         allBanners.map( banner => <SingleBanner
             key={banner.id}
             banner = {banner}
         ></SingleBanner>)
       }
+    </div>
+    <div className="w-[80%] mx-auto grid grid-cols-2 gap-6 mt-20">
+      <div className="">
+        <img src={booksbg1} alt="" />
+      </div>
+      <div className="">
+      <img src={booksbg2} alt="" />
+      </div>
+    </div>
     </div>
   );
 };
